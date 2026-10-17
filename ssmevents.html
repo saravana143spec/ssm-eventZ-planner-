@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSM Party Planner | Premium Event & Decoration Services</title>
+    <title>SSM Eventz | Luxury Event Management & Decorators</title>
     
     <!-- Google Fonts & Font Awesome Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Tailwind CSS CDN -->
@@ -31,7 +31,8 @@
                     },
                     fontFamily: {
                         sans: ['Outfit', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif']
+                        serif: ['Playfair Display', 'serif'],
+                        script: ['Great Vibes', 'cursive']
                     }
                 }
             }
@@ -54,10 +55,10 @@
             background: #D4AF37;
         }
         .glass-panel {
-            background: rgba(26, 29, 38, 0.75);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(212, 175, 55, 0.18);
+            background: rgba(26, 29, 38, 0.85);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
         }
         .gold-gradient-text {
             background: linear-gradient(135deg, #FFF099 0%, #D4AF37 50%, #997A15 100%);
@@ -70,6 +71,9 @@
         .rose-gradient-bg {
             background: linear-gradient(135deg, #F0B3A6 0%, #E8A598 100%);
         }
+        .logo-glow {
+            filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.4));
+        }
     </style>
 </head>
 <body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-gold selection:text-brand-dark min-h-screen flex flex-col">
@@ -78,14 +82,12 @@
     <header class="sticky top-0 z-40 w-full glass-panel border-b border-white/10 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <!-- Brand Logo -->
+                <!-- Brand Logo & Image -->
                 <a href="#home" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 rounded-full gold-gradient-bg flex items-center justify-center text-brand-dark font-extrabold text-xl shadow-lg shadow-brand-gold/20 group-hover:scale-105 transition-transform">
-                        S
-                    </div>
+                    <img src="1000003214.png" alt="SSM EVENTZ Logo" class="h-12 w-12 sm:h-14 sm:w-14 object-contain rounded-full logo-glow border border-brand-gold/40 group-hover:scale-105 transition-transform" onerror="this.onerror=null; this.src='https://placehold.co/100x100/1A1D26/D4AF37?text=SSM';">
                     <div>
-                        <span class="font-serif text-2xl font-bold tracking-tight gold-gradient-text block leading-none">SSM Party</span>
-                        <span class="text-[10px] tracking-widest text-slate-400 uppercase font-semibold">Planner & Decorators</span>
+                        <span class="font-serif text-xl sm:text-2xl font-extrabold tracking-tight gold-gradient-text block leading-none">SSM EVENTZ</span>
+                        <span class="font-script text-xs sm:text-sm text-brand-gold tracking-widest block leading-none mt-1">luxury eventz</span>
                     </div>
                 </a>
 
@@ -118,7 +120,7 @@
             <a href="#services" class="mobile-link block px-3 py-2 rounded-lg hover:bg-white/5 hover:text-brand-gold font-medium">Services</a>
             <a href="#gallery" class="mobile-link block px-3 py-2 rounded-lg hover:bg-white/5 hover:text-brand-gold font-medium">Theme Catalog</a>
             <a href="#estimator" class="mobile-link block px-3 py-2 rounded-lg hover:bg-white/5 hover:text-brand-gold font-medium">Cost Estimator</a>
-            <a href="#reviews" class="mobile-link block px-3 py-2 rounded-lg hover:bg-white/5 hover:text-brand-gold font-medium">Reviews</a>
+            <a href="#reviews" class="mobile-link block px-3 py-2 rounded-lg hover:bg-white/5 hover:text-brand-link font-medium">Reviews</a>
             <a href="#booking" class="mobile-link block w-full text-center gold-gradient-bg text-brand-dark font-bold py-3 rounded-xl mt-2 shadow-md">
                 <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Book via WhatsApp
             </a>
@@ -129,23 +131,32 @@
     <main class="flex-grow">
         
         <!-- Hero Section -->
-        <section id="home" class="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-16 lg:py-24">
+        <section id="home" class="relative min-h-[88vh] flex items-center justify-center overflow-hidden py-16 lg:py-24">
             <!-- Background Visual Highlights -->
             <div class="absolute inset-0 z-0 opacity-40 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-brand-gold/30 via-brand-dark/80 to-brand-dark"></div>
             <div class="absolute -top-40 -left-40 w-96 h-96 bg-brand-gold/20 rounded-full blur-3xl pointer-events-none"></div>
             <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-brand-rose/20 rounded-full blur-3xl pointer-events-none"></div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-gold/40 bg-brand-gold/10 text-brand-gold text-xs font-semibold tracking-widest uppercase mb-6 shadow-sm">
-                    <i class="fa-solid fa-sparkles"></i> Premium Event & Balloon Decoration
+                
+                <!-- Main Logo Showcase Banner -->
+                <div class="mb-8 flex justify-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-2 bg-gradient-to-r from-brand-gold via-brand-accent to-brand-gold rounded-full blur-lg opacity-60 group-hover:opacity-100 transition duration-500"></div>
+                        <img src="1000003214.png" alt="SSM EVENTZ Official Seal" class="relative w-44 h-44 sm:w-56 sm:h-56 object-contain rounded-full bg-brand-dark p-2 border-2 border-brand-gold shadow-2xl logo-glow transition-transform duration-500 hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/200x200/1A1D26/D4AF37?text=SSM+EVENTZ';">
+                    </div>
+                </div>
+
+                <span class="inline-flex items-center gap-2 px-5 py-1.5 rounded-full border border-brand-gold/50 bg-brand-gold/10 text-brand-gold text-xs font-semibold tracking-widest uppercase mb-6 shadow-sm">
+                    <i class="fa-solid fa-crown"></i> Complete Luxury Event Management
                 </span>
                 
-                <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight max-w-5xl mx-auto">
+                <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4 leading-tight max-w-5xl mx-auto">
                     Transforming Celebrations Into <span class="gold-gradient-text italic">Unforgettable Memories</span>
                 </h1>
                 
                 <p class="text-slate-300 text-lg sm:text-xl max-w-3xl mx-auto mb-10 font-light leading-relaxed">
-                    From grand theme birthdays and magical baby showers to cradle ceremonies & luxury anniversary setups. We bring elegance, creativity, and flawless execution to your doorstep.
+                    Birthday Decoration • DJ & Music • Popcorn & Cotton Candy • Juice Stall • Photography • Complete Event Management
                 </p>
 
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
@@ -157,35 +168,35 @@
                     </a>
                 </div>
 
-                <!-- Feature Highlights Bar -->
-                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-left">
-                    <div class="glass-panel p-4 rounded-xl flex items-center gap-3">
-                        <div class="text-brand-gold text-2xl"><i class="fa-solid fa-balloon"></i></div>
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">500+ Themes</p>
-                            <p class="text-xs text-slate-400">Custom Balloon Decor</p>
-                        </div>
+                <!-- Feature Services Badges (Matching Logo Icons) -->
+                <div class="mt-16 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 max-w-6xl mx-auto text-center">
+                    <div class="glass-panel p-3 rounded-xl flex flex-col items-center justify-center">
+                        <i class="fa-solid fa-tent text-brand-gold text-xl mb-1"></i>
+                        <span class="text-[11px] font-bold text-slate-200">Event Management</span>
                     </div>
-                    <div class="glass-panel p-4 rounded-xl flex items-center gap-3">
-                        <div class="text-brand-gold text-2xl"><i class="fa-solid fa-award"></i></div>
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">5+ Years</p>
-                            <p class="text-xs text-slate-400">Trusted Experience</p>
-                        </div>
+                    <div class="glass-panel p-3 rounded-xl flex flex-col items-center justify-center">
+                        <i class="fa-solid fa-cake-candles text-brand-gold text-xl mb-1"></i>
+                        <span class="text-[11px] font-bold text-slate-200">Birthday Decor</span>
                     </div>
-                    <div class="glass-panel p-4 rounded-xl flex items-center gap-3">
-                        <div class="text-brand-gold text-2xl"><i class="fa-solid fa-face-smile"></i></div>
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">1000+ Happy</p>
-                            <p class="text-xs text-slate-400">Clients Served</p>
-                        </div>
+                    <div class="glass-panel p-3 rounded-xl flex flex-col items-center justify-center">
+                        <i class="fa-solid fa-box-open text-brand-gold text-xl mb-1"></i>
+                        <span class="text-[11px] font-bold text-slate-200">Popcorn Stall</span>
                     </div>
-                    <div class="glass-panel p-4 rounded-xl flex items-center gap-3">
-                        <div class="text-brand-gold text-2xl"><i class="fa-solid fa-bolt"></i></div>
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">Quick Booking</p>
-                            <p class="text-xs text-slate-400">Instant WhatsApp Quote</p>
-                        </div>
+                    <div class="glass-panel p-3 rounded-xl flex flex-col items-center justify-center">
+                        <i class="fa-solid fa-cloud text-brand-rose text-xl mb-1"></i>
+                        <span class="text-[11px] font-bold text-slate-200">Cotton Candy</span>
+                    </div>
+                    <div class="glass-panel p-3 rounded-xl flex flex-col items-center justify-center">
+                        <i class="fa-solid fa-headphones text-brand-gold text-xl mb-1"></i>
+                        <span class="text-[11px] font-bold text-slate-200">Live DJ</span>
+                    </div>
+                    <div class="glass-panel p-3 rounded-xl flex flex-col items-center justify-center">
+                        <i class="fa-solid fa-glass-water text-brand-gold text-xl mb-1"></i>
+                        <span class="text-[11px] font-bold text-slate-200">Fresh Juice</span>
+                    </div>
+                    <div class="glass-panel p-3 rounded-xl flex flex-col items-center justify-center">
+                        <i class="fa-solid fa-camera text-brand-gold text-xl mb-1"></i>
+                        <span class="text-[11px] font-bold text-slate-200">Photography</span>
                     </div>
                 </div>
             </div>
@@ -195,9 +206,9 @@
         <section id="services" class="py-20 bg-brand-dark/50 relative border-t border-brand-cardBorder">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase">What We Specialize In</span>
-                    <h2 class="font-serif text-3xl sm:text-5xl font-bold mt-2 mb-4">Our Signature Event Services</h2>
-                    <p class="text-slate-400 text-base">We handle everything from balloon arches and backdrops to complete lighting and event entertainment so you can enjoy your special day stress-free.</p>
+                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase">Everything Under One Roof</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold mt-2 mb-4">Our Services & Live Stalls</h2>
+                    <p class="text-slate-400 text-base">SSM EVENTZ handles end-to-end planning so you and your guests can focus entirely on enjoying the luxury experience.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -206,46 +217,46 @@
                         <div class="w-14 h-14 rounded-xl gold-gradient-bg flex items-center justify-center text-brand-dark text-2xl font-bold mb-6 group-hover:scale-110 transition-transform shadow-md shadow-brand-gold/20">
                             <i class="fa-solid fa-cake-candles"></i>
                         </div>
-                        <h3 class="font-serif text-xl font-bold text-slate-100 mb-3 group-hover:text-brand-gold transition-colors">Birthday Bash Decor</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">First birthdays, milestone celebrations, character themes (Cocomelon, Jungle, Princess, Superhero), LED neon backdrops & balloon ring arches.</p>
+                        <h3 class="font-serif text-xl font-bold text-slate-100 mb-3 group-hover:text-brand-gold transition-colors">Birthday & Theme Decoration</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Milestone birthdays, kids character themes, ring arches, LED neon signs, foil balloon setups, and entrance arches.</p>
                         <a href="#gallery" class="text-brand-gold font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
-                            View Gallery <i class="fa-solid fa-arrow-right text-xs"></i>
+                            View Catalog <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
                     </div>
 
                     <!-- Service 2 -->
                     <div class="bg-brand-cardBg border border-brand-cardBorder rounded-2xl p-6 hover:border-brand-gold/50 transition-all duration-300 group hover:-translate-y-1">
-                        <div class="w-14 h-14 rounded-xl rose-gradient-bg flex items-center justify-center text-brand-dark text-2xl font-bold mb-6 group-hover:scale-110 transition-transform shadow-md shadow-brand-rose/20">
-                            <i class="fa-solid fa-baby"></i>
+                        <div class="w-14 h-14 rounded-xl gold-gradient-bg flex items-center justify-center text-brand-dark text-2xl font-bold mb-6 group-hover:scale-110 transition-transform shadow-md">
+                            <i class="fa-solid fa-headphones"></i>
                         </div>
-                        <h3 class="font-serif text-xl font-bold text-slate-100 mb-3 group-hover:text-brand-gold transition-colors">Baby Shower & Cradle Ceremony</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Pastel balloon clusters, royal cradle flower arrangements, mom-to-be seating setups, gender reveal surprises, and delicate entrance arches.</p>
-                        <a href="#gallery" class="text-brand-gold font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
-                            View Gallery <i class="fa-solid fa-arrow-right text-xs"></i>
+                        <h3 class="font-serif text-xl font-bold text-slate-100 mb-3 group-hover:text-brand-gold transition-colors">Professional DJ & Music</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">High-fidelity sound systems, intelligent dance floor lighting, smoke machines, and energetic professional DJs.</p>
+                        <a href="#estimator" class="text-brand-gold font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                            Add to Package <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
                     </div>
 
                     <!-- Service 3 -->
                     <div class="bg-brand-cardBg border border-brand-cardBorder rounded-2xl p-6 hover:border-brand-gold/50 transition-all duration-300 group hover:-translate-y-1">
-                        <div class="w-14 h-14 rounded-xl gold-gradient-bg flex items-center justify-center text-brand-dark text-2xl font-bold mb-6 group-hover:scale-110 transition-transform shadow-md shadow-brand-gold/20">
-                            <i class="fa-solid fa-heart"></i>
+                        <div class="w-14 h-14 rounded-xl rose-gradient-bg flex items-center justify-center text-brand-dark text-2xl font-bold mb-6 group-hover:scale-110 transition-transform shadow-md">
+                            <i class="fa-solid fa-cloud"></i>
                         </div>
-                        <h3 class="font-serif text-xl font-bold text-slate-100 mb-3 group-hover:text-brand-gold transition-colors">Anniversary & Romantic Surprises</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Red & gold luxury themes, marquee light-up letters, hotel room surprises, candlelight dinner setups, and metallic balloon canopies.</p>
-                        <a href="#gallery" class="text-brand-gold font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
-                            View Gallery <i class="fa-solid fa-arrow-right text-xs"></i>
+                        <h3 class="font-serif text-xl font-bold text-slate-100 mb-3 group-hover:text-brand-gold transition-colors">Popcorn & Cotton Candy Stalls</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Live hot popcorn counter and fluffy colorful cotton candy machine with dedicated stall operators for kids and guests.</p>
+                        <a href="#estimator" class="text-brand-gold font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                            Add Stalls <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
                     </div>
 
                     <!-- Service 4 -->
                     <div class="bg-brand-cardBg border border-brand-cardBorder rounded-2xl p-6 hover:border-brand-gold/50 transition-all duration-300 group hover:-translate-y-1">
-                        <div class="w-14 h-14 rounded-xl rose-gradient-bg flex items-center justify-center text-brand-dark text-2xl font-bold mb-6 group-hover:scale-110 transition-transform shadow-md">
-                            <i class="fa-solid fa-building"></i>
+                        <div class="w-14 h-14 rounded-xl gold-gradient-bg flex items-center justify-center text-brand-dark text-2xl font-bold mb-6 group-hover:scale-110 transition-transform shadow-md">
+                            <i class="fa-solid fa-glass-water"></i>
                         </div>
-                        <h3 class="font-serif text-xl font-bold text-slate-100 mb-3 group-hover:text-brand-gold transition-colors">Corporate Events & Openings</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Store inauguration balloon pillars, brand color themes, ribbon cutting setups, product launches, and annual corporate gala decor.</p>
-                        <a href="#gallery" class="text-brand-gold font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
-                            View Gallery <i class="fa-solid fa-arrow-right text-xs"></i>
+                        <h3 class="font-serif text-xl font-bold text-slate-100 mb-3 group-hover:text-brand-gold transition-colors">Welcome Drinks & Fresh Juice</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Refreshing mocktails, fresh fruit juices, welcome drink counters, and custom beverage bars styled to match event aesthetics.</p>
+                        <a href="#estimator" class="text-brand-gold font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                            Add Juice Counter <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
                     </div>
 
@@ -254,44 +265,44 @@
                         <div class="w-14 h-14 rounded-xl gold-gradient-bg flex items-center justify-center text-brand-dark text-2xl font-bold mb-6 group-hover:scale-110 transition-transform shadow-md">
                             <i class="fa-solid fa-camera"></i>
                         </div>
-                        <h3 class="font-serif text-xl font-bold text-slate-100 mb-3 group-hover:text-brand-gold transition-colors">Photography & Entertainment</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Candid photography, HD videography/reels, live DJ & sound setup, magician, tattoo artist, and cotton candy counters.</p>
+                        <h3 class="font-serif text-xl font-bold text-slate-100 mb-3 group-hover:text-brand-gold transition-colors">Candid Photography & Reels</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">High-resolution DSLR candid photos, cinematic event highlight reels, video editing, and instant digital photo delivery.</p>
                         <a href="#estimator" class="text-brand-gold font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
-                            Add to Package <i class="fa-solid fa-arrow-right text-xs"></i>
+                            Add Photography <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
                     </div>
 
                     <!-- Service 6 -->
                     <div class="bg-brand-cardBg border border-brand-cardBorder rounded-2xl p-6 hover:border-brand-gold/50 transition-all duration-300 group hover:-translate-y-1">
                         <div class="w-14 h-14 rounded-xl rose-gradient-bg flex items-center justify-center text-brand-dark text-2xl font-bold mb-6 group-hover:scale-110 transition-transform shadow-md">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <i class="fa-solid fa-tent"></i>
                         </div>
-                        <h3 class="font-serif text-xl font-bold text-slate-100 mb-3 group-hover:text-brand-gold transition-colors">Custom Themed Concepts</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Have a specific reference photo from Pinterest or Instagram? Share it with us and we will customize the exact design within your budget!</p>
+                        <h3 class="font-serif text-xl font-bold text-slate-100 mb-3 group-hover:text-brand-gold transition-colors">End-to-End Event Management</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Complete venue setup, coordination, stage lighting, guest welcome, and seamless execution from start to finish.</p>
                         <a href="#booking" class="text-brand-gold font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
-                            Send Design Idea <i class="fa-solid fa-arrow-right text-xs"></i>
+                            Inquire Full Management <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- EXTRA FEATURE 1: Interactive Event Cost Estimator -->
+        <!-- Interactive Event Cost Estimator -->
         <section id="estimator" class="py-20 relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-12">
-                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase"><i class="fa-solid fa-calculator mr-1"></i> Transparent Pricing</span>
+                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase"><i class="fa-solid fa-calculator mr-1"></i> Transparent Rates</span>
                     <h2 class="font-serif text-3xl sm:text-5xl font-bold mt-2 mb-4">Interactive Event Cost Estimator</h2>
-                    <p class="text-slate-400 text-base">Plan your event budget transparently! Select your celebration type, guest count, and add-on services to get an instant estimate.</p>
+                    <p class="text-slate-400 text-base">Build your custom SSM EVENTZ package and calculate estimated costs live before booking via WhatsApp.</p>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                    <!-- Calculator Inputs (Left 7 Cols) -->
+                    <!-- Calculator Inputs -->
                     <div class="lg:col-span-7 bg-brand-cardBg border border-brand-cardBorder rounded-3xl p-6 sm:p-8 space-y-6 shadow-xl">
                         
                         <!-- 1. Event Type Selector -->
                         <div>
-                            <label class="block text-slate-200 font-semibold mb-3 text-sm">1. Choose Event Type</label>
+                            <label class="block text-slate-200 font-semibold mb-3 text-sm">1. Choose Event Theme Setup</label>
                             <div class="grid grid-cols-2 sm:grid-cols-3 gap-3" id="eventTypeGrid">
                                 <button type="button" data-type="birthday" data-price="6000" class="event-type-btn active text-left p-3.5 rounded-xl border border-brand-gold bg-brand-gold/10 text-slate-100 transition-all text-xs sm:text-sm font-semibold flex flex-col justify-between h-20">
                                     <i class="fa-solid fa-cake-candles text-brand-gold text-lg"></i>
@@ -302,20 +313,20 @@
                                     <span>Baby Shower</span>
                                 </button>
                                 <button type="button" data-type="cradle" data-price="9000" class="event-type-btn text-left p-3.5 rounded-xl border border-brand-cardBorder hover:border-brand-gold/50 bg-brand-dark/50 text-slate-300 transition-all text-xs sm:text-sm font-semibold flex flex-col justify-between h-20">
-                                    <i class="fa-solid fa-restroom text-slate-400 text-lg"></i>
+                                    <i class="fa-solid fa-crown text-slate-400 text-lg"></i>
                                     <span>Cradle Ceremony</span>
                                 </button>
                                 <button type="button" data-type="anniversary" data-price="7500" class="event-type-btn text-left p-3.5 rounded-xl border border-brand-cardBorder hover:border-brand-gold/50 bg-brand-dark/50 text-slate-300 transition-all text-xs sm:text-sm font-semibold flex flex-col justify-between h-20">
                                     <i class="fa-solid fa-heart text-slate-400 text-lg"></i>
-                                    <span>Anniversary</span>
+                                    <span>Anniversary Setup</span>
                                 </button>
                                 <button type="button" data-type="corporate" data-price="12000" class="event-type-btn text-left p-3.5 rounded-xl border border-brand-cardBorder hover:border-brand-gold/50 bg-brand-dark/50 text-slate-300 transition-all text-xs sm:text-sm font-semibold flex flex-col justify-between h-20">
                                     <i class="fa-solid fa-briefcase text-slate-400 text-lg"></i>
-                                    <span>Corporate Event</span>
+                                    <span>Corporate Launch</span>
                                 </button>
                                 <button type="button" data-type="custom" data-price="15000" class="event-type-btn text-left p-3.5 rounded-xl border border-brand-cardBorder hover:border-brand-gold/50 bg-brand-dark/50 text-slate-300 transition-all text-xs sm:text-sm font-semibold flex flex-col justify-between h-20">
-                                    <i class="fa-solid fa-crown text-slate-400 text-lg"></i>
-                                    <span>Luxury Theme</span>
+                                    <i class="fa-solid fa-gem text-slate-400 text-lg"></i>
+                                    <span>Luxury Grand Theme</span>
                                 </button>
                             </div>
                         </div>
@@ -332,58 +343,61 @@
 
                         <!-- 3. Add-on Services Checklist -->
                         <div>
-                            <label class="block text-slate-200 font-semibold mb-3 text-sm">3. Select Add-on Services</label>
+                            <label class="block text-slate-200 font-semibold mb-3 text-sm">3. Select SSM Live Stalls & Add-ons</label>
                             <div class="space-y-2.5">
                                 <label class="flex items-center justify-between p-3 rounded-xl border border-brand-cardBorder hover:border-brand-gold/40 bg-brand-dark/40 cursor-pointer transition-colors">
                                     <div class="flex items-center gap-3">
-                                        <input type="checkbox" class="addon-checkbox accent-brand-gold w-4 h-4 rounded" data-price="4500" data-name="Professional Photography & Reels">
-                                        <span class="text-sm font-medium text-slate-200">Professional Photography & Reels</span>
-                                    </div>
-                                    <span class="text-xs font-semibold text-brand-gold">+ ₹4,500</span>
-                                </label>
-
-                                <label class="flex items-center justify-between p-3 rounded-xl border border-brand-cardBorder hover:border-brand-gold/40 bg-brand-dark/40 cursor-pointer transition-colors">
-                                    <div class="flex items-center gap-3">
-                                        <input type="checkbox" class="addon-checkbox accent-brand-gold w-4 h-4 rounded" data-price="3500" data-name="Live DJ & Music System">
-                                        <span class="text-sm font-medium text-slate-200">Live DJ & High Sound System</span>
+                                        <input type="checkbox" class="addon-checkbox accent-brand-gold w-4 h-4 rounded" data-price="3500" data-name="Live DJ & Sound System">
+                                        <span class="text-sm font-medium text-slate-200"><i class="fa-solid fa-headphones text-brand-gold mr-1.5"></i> Live DJ & High Sound System</span>
                                     </div>
                                     <span class="text-xs font-semibold text-brand-gold">+ ₹3,500</span>
                                 </label>
 
                                 <label class="flex items-center justify-between p-3 rounded-xl border border-brand-cardBorder hover:border-brand-gold/40 bg-brand-dark/40 cursor-pointer transition-colors">
                                     <div class="flex items-center gap-3">
-                                        <input type="checkbox" class="addon-checkbox accent-brand-gold w-4 h-4 rounded" data-price="2500" data-name="Welcome Mocktails Counter">
-                                        <span class="text-sm font-medium text-slate-200">Welcome Drinks / Mocktails Counter</span>
+                                        <input type="checkbox" class="addon-checkbox accent-brand-gold w-4 h-4 rounded" data-price="2500" data-name="Popcorn & Cotton Candy Stall">
+                                        <span class="text-sm font-medium text-slate-200"><i class="fa-solid fa-cloud text-brand-rose mr-1.5"></i> Popcorn & Cotton Candy Combo Stall</span>
                                     </div>
                                     <span class="text-xs font-semibold text-brand-gold">+ ₹2,500</span>
                                 </label>
 
                                 <label class="flex items-center justify-between p-3 rounded-xl border border-brand-cardBorder hover:border-brand-gold/40 bg-brand-dark/40 cursor-pointer transition-colors">
                                     <div class="flex items-center gap-3">
-                                        <input type="checkbox" class="addon-checkbox accent-brand-gold w-4 h-4 rounded" data-price="3000" data-name="Magic Show / Tattoo Artist">
-                                        <span class="text-sm font-medium text-slate-200">Kids Entertainment (Magic Show / Tattoo Artist)</span>
+                                        <input type="checkbox" class="addon-checkbox accent-brand-gold w-4 h-4 rounded" data-price="2000" data-name="Fresh Juice / Welcome Mocktails">
+                                        <span class="text-sm font-medium text-slate-200"><i class="fa-solid fa-glass-water text-brand-gold mr-1.5"></i> Fresh Juice / Welcome Mocktails Counter</span>
                                     </div>
-                                    <span class="text-xs font-semibold text-brand-gold">+ ₹3,000</span>
+                                    <span class="text-xs font-semibold text-brand-gold">+ ₹2,000</span>
+                                </label>
+
+                                <label class="flex items-center justify-between p-3 rounded-xl border border-brand-cardBorder hover:border-brand-gold/40 bg-brand-dark/40 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" class="addon-checkbox accent-brand-gold w-4 h-4 rounded" data-price="4500" data-name="Professional Photography & Reels">
+                                        <span class="text-sm font-medium text-slate-200"><i class="fa-solid fa-camera text-brand-gold mr-1.5"></i> Professional DSLR Photography & Reels</span>
+                                    </div>
+                                    <span class="text-xs font-semibold text-brand-gold">+ ₹4,500</span>
                                 </label>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Live Breakdown Summary (Right 5 Cols) -->
+                    <!-- Live Breakdown Summary -->
                     <div class="lg:col-span-5 bg-gradient-to-br from-brand-cardBg to-slate-900 border border-brand-gold/30 rounded-3xl p-6 sm:p-8 sticky top-28 shadow-2xl">
-                        <h3 class="font-serif text-2xl font-bold mb-4 text-slate-100 flex items-center justify-between">
-                            <span>Price Summary</span>
-                            <i class="fa-solid fa-receipt text-brand-gold"></i>
-                        </h3>
+                        <div class="flex items-center gap-3 mb-4">
+                            <img src="1000003214.png" alt="SSM Logo" class="w-10 h-10 object-contain rounded-full logo-glow" onerror="this.onerror=null; this.src='https://placehold.co/80x80/1A1D26/D4AF37?text=SSM';">
+                            <div>
+                                <h3 class="font-serif text-xl font-bold text-slate-100">Package Summary</h3>
+                                <p class="text-xs text-brand-gold">SSM EVENTZ Instant Quote</p>
+                            </div>
+                        </div>
                         <div class="w-full h-px bg-brand-gold/20 mb-6"></div>
 
                         <div class="space-y-3 text-sm">
                             <div class="flex justify-between text-slate-300">
-                                <span>Selected Base Theme:</span>
+                                <span>Theme Selected:</span>
                                 <span class="font-semibold text-slate-100" id="summaryBaseTheme">Birthday Party</span>
                             </div>
                             <div class="flex justify-between text-slate-300">
-                                <span>Base Decoration Cost:</span>
+                                <span>Base Decor Cost:</span>
                                 <span class="font-semibold text-slate-100" id="summaryBaseCost">₹6,000</span>
                             </div>
                             <div class="flex justify-between text-slate-300">
@@ -391,38 +405,38 @@
                                 <span class="font-semibold text-slate-100" id="summaryGuestCost">₹0</span>
                             </div>
                             <div class="flex justify-between text-slate-300">
-                                <span>Add-ons Total:</span>
+                                <span>Add-ons & Stalls:</span>
                                 <span class="font-semibold text-slate-100" id="summaryAddonCost">₹0</span>
                             </div>
                         </div>
 
                         <div class="my-6 border-t border-dashed border-slate-700 pt-4">
-                            <p class="text-xs text-slate-400 uppercase tracking-wider mb-1 font-bold">Estimated Total Cost</p>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider mb-1 font-bold">Estimated Total Amount</p>
                             <div class="text-4xl font-extrabold gold-gradient-text" id="summaryTotalCost">₹6,000</div>
-                            <p class="text-[11px] text-slate-400 mt-1">*Final price may vary based on specific custom theme requirements.</p>
+                            <p class="text-[11px] text-slate-400 mt-1">*Final quote subject to custom requirements and venue setup distance.</p>
                         </div>
 
                         <button id="useEstimateBtn" class="w-full gold-gradient-bg text-brand-dark font-extrabold py-3.5 rounded-xl hover:shadow-lg hover:shadow-brand-gold/20 transition-all text-sm flex items-center justify-center gap-2">
-                            Apply Estimate to WhatsApp Booking <i class="fa-solid fa-arrow-down text-xs"></i>
+                            Apply Package to WhatsApp Form <i class="fa-solid fa-arrow-down text-xs"></i>
                         </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Interactive Event Theme Gallery / Catalog -->
+        <!-- Theme Catalog Gallery -->
         <section id="gallery" class="py-20 bg-brand-dark/80 relative border-t border-brand-cardBorder">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-12">
-                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase">Inspiration Gallery</span>
-                    <h2 class="font-serif text-3xl sm:text-5xl font-bold mt-2 mb-4">Explore Our Decoration Themes</h2>
-                    <p class="text-slate-400 text-base">Filter through our real setup samples. Click on any theme card to preview full details and images.</p>
+                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase">Visual Inspirations</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold mt-2 mb-4">Real Setup Theme Gallery</h2>
+                    <p class="text-slate-400 text-base">Tap on any setup to view details and send direct booking requests to SSM EVENTZ.</p>
                 </div>
 
                 <!-- Gallery Category Filters -->
                 <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10">
                     <button class="gallery-filter-btn active px-5 py-2 rounded-full text-xs sm:text-sm font-semibold border border-brand-gold bg-brand-gold text-brand-dark transition-all" data-filter="all">
-                        All Themes
+                        All Setups
                     </button>
                     <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold border border-brand-cardBorder bg-brand-cardBg text-slate-300 hover:border-brand-gold/40 transition-all" data-filter="birthday">
                         Birthday
@@ -430,18 +444,15 @@
                     <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold border border-brand-cardBorder bg-brand-cardBg text-slate-300 hover:border-brand-gold/40 transition-all" data-filter="babyshower">
                         Baby Shower
                     </button>
-                    <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold border border-brand-cardBorder bg-brand-cardBg text-slate-300 hover:border-brand-gold/40 transition-all" data-filter="anniversary">
-                        Anniversary
-                    </button>
-                    <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold border border-brand-cardBorder bg-brand-cardBg text-slate-300 hover:border-brand-gold/40 transition-all" data-filter="balloons">
-                        Balloon Arches
+                    <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold border border-brand-cardBorder bg-brand-cardBg text-slate-300 hover:border-brand-gold/40 transition-all" data-filter="stalls">
+                        Popcorn/DJ Stalls
                     </button>
                 </div>
 
                 <!-- Gallery Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
                     <!-- Item 1 -->
-                    <div class="gallery-item bg-brand-cardBg border border-brand-cardBorder rounded-2xl overflow-hidden hover:border-brand-gold/50 transition-all duration-300 cursor-pointer group" data-category="birthday" onclick="openModal('Royal Jungle Theme', 'Birthday', '₹8,500', 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80', 'Custom jungle animal cutouts, organic green & gold balloon garland ring, neon Happy Birthday sign.')">
+                    <div class="gallery-item bg-brand-cardBg border border-brand-cardBorder rounded-2xl overflow-hidden hover:border-brand-gold/50 transition-all duration-300 cursor-pointer group" data-category="birthday" onclick="openModal('Royal Jungle Safari Theme', 'Birthday', '₹8,500', 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80', 'Custom jungle animal cutouts, organic green & gold balloon garland ring, neon Happy Birthday sign.')">
                         <div class="relative h-60 overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Jungle Theme" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-cardBg via-transparent opacity-80"></div>
@@ -449,7 +460,7 @@
                         </div>
                         <div class="p-5">
                             <h3 class="font-serif text-lg font-bold text-slate-100 group-hover:text-brand-gold transition-colors">Royal Jungle Safari Theme</h3>
-                            <p class="text-xs text-slate-400 mt-1">Green, Gold & Champagne Metallic Balloon Arch</p>
+                            <p class="text-xs text-slate-400 mt-1">Green, Gold & Champagne Organic Ring Setup</p>
                             <div class="flex items-center justify-between mt-4 border-t border-slate-800 pt-3">
                                 <span class="text-brand-gold font-bold text-sm">Starts @ ₹8,500</span>
                                 <span class="text-xs text-slate-400 group-hover:text-slate-200">Tap to view <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></span>
@@ -458,15 +469,15 @@
                     </div>
 
                     <!-- Item 2 -->
-                    <div class="gallery-item bg-brand-cardBg border border-brand-cardBorder rounded-2xl overflow-hidden hover:border-brand-gold/50 transition-all duration-300 cursor-pointer group" data-category="babyshower" onclick="openModal('Pastel Cloud & Teddy Baby Shower', 'Baby Shower', '₹9,000', 'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80', 'Soft pastel balloons, giant teddy bear prop, welcome board, and customized LED ring light.')">
+                    <div class="gallery-item bg-brand-cardBg border border-brand-cardBorder rounded-2xl overflow-hidden hover:border-brand-gold/50 transition-all duration-300 cursor-pointer group" data-category="babyshower" onclick="openModal('Pastel Teddy Cloud Setup', 'Baby Shower', '₹9,000', 'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80', 'Soft pastel balloons, giant teddy bear prop, welcome board, and customized LED ring light.')">
                         <div class="relative h-60 overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80" alt="Baby Shower" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-cardBg via-transparent opacity-80"></div>
                             <span class="absolute top-3 right-3 bg-brand-rose text-brand-dark font-extrabold text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider">Baby Shower</span>
                         </div>
                         <div class="p-5">
-                            <h3 class="font-serif text-lg font-bold text-slate-100 group-hover:text-brand-gold transition-colors">Pastel Dream & Teddy Bear Setup</h3>
-                            <p class="text-xs text-slate-400 mt-1">Baby Pink, Powder Blue & Cream Arch</p>
+                            <h3 class="font-serif text-lg font-bold text-slate-100 group-hover:text-brand-gold transition-colors">Pastel Teddy Cloud Setup</h3>
+                            <p class="text-xs text-slate-400 mt-1">Baby Pink, Powder Blue & Cream Ring Arch</p>
                             <div class="flex items-center justify-between mt-4 border-t border-slate-800 pt-3">
                                 <span class="text-brand-gold font-bold text-sm">Starts @ ₹9,000</span>
                                 <span class="text-xs text-slate-400 group-hover:text-slate-200">Tap to view <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></span>
@@ -475,68 +486,17 @@
                     </div>
 
                     <!-- Item 3 -->
-                    <div class="gallery-item bg-brand-cardBg border border-brand-cardBorder rounded-2xl overflow-hidden hover:border-brand-gold/50 transition-all duration-300 cursor-pointer group" data-category="anniversary" onclick="openModal('Luxury Red & Gold Romance', 'Anniversary', '₹7,500', 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=800&q=80', 'Love foil letters, heart shape balloon backdrop, rose petal aisle path, and warm fairy lights canopy.')">
+                    <div class="gallery-item bg-brand-cardBg border border-brand-cardBorder rounded-2xl overflow-hidden hover:border-brand-gold/50 transition-all duration-300 cursor-pointer group" data-category="stalls" onclick="openModal('Live DJ Night & Popcorn Stall', 'Popcorn/DJ Stalls', '₹6,000', 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80', 'Complete entertainment package with high sound DJ equipment, dance lighting, and live popcorn stall.')">
                         <div class="relative h-60 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=800&q=80" alt="Anniversary Decor" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80" alt="DJ & Stalls" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-cardBg via-transparent opacity-80"></div>
-                            <span class="absolute top-3 right-3 bg-red-500 text-white font-extrabold text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider">Anniversary</span>
+                            <span class="absolute top-3 right-3 bg-purple-600 text-white font-extrabold text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider">Entertainment</span>
                         </div>
                         <div class="p-5">
-                            <h3 class="font-serif text-lg font-bold text-slate-100 group-hover:text-brand-gold transition-colors">Luxury Red & Gold Romance</h3>
-                            <p class="text-xs text-slate-400 mt-1">Heart Balloon Canopy & Marquee Lights</p>
+                            <h3 class="font-serif text-lg font-bold text-slate-100 group-hover:text-brand-gold transition-colors">Live DJ Night & Snack Stalls</h3>
+                            <p class="text-xs text-slate-400 mt-1">Popcorn, Cotton Candy & DJ Sound</p>
                             <div class="flex items-center justify-between mt-4 border-t border-slate-800 pt-3">
-                                <span class="text-brand-gold font-bold text-sm">Starts @ ₹7,500</span>
-                                <span class="text-xs text-slate-400 group-hover:text-slate-200">Tap to view <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 4 -->
-                    <div class="gallery-item bg-brand-cardBg border border-brand-cardBorder rounded-2xl overflow-hidden hover:border-brand-gold/50 transition-all duration-300 cursor-pointer group" data-category="balloons" onclick="openModal('Organic Circular Balloon Ring Arch', 'Balloon Arches', '₹5,500', 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80', 'Versatile multi-color organic balloon garland ring suitable for home or hall entrances.')">
-                        <div class="relative h-60 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80" alt="Balloon Arch" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-brand-cardBg via-transparent opacity-80"></div>
-                            <span class="absolute top-3 right-3 bg-brand-gold text-brand-dark font-extrabold text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider">Balloon Arch</span>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-serif text-lg font-bold text-slate-100 group-hover:text-brand-gold transition-colors">Organic Circular Ring Arch</h3>
-                            <p class="text-xs text-slate-400 mt-1">Chrome Gold, White & Black Accent Balloons</p>
-                            <div class="flex items-center justify-between mt-4 border-t border-slate-800 pt-3">
-                                <span class="text-brand-gold font-bold text-sm">Starts @ ₹5,500</span>
-                                <span class="text-xs text-slate-400 group-hover:text-slate-200">Tap to view <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 5 -->
-                    <div class="gallery-item bg-brand-cardBg border border-brand-cardBorder rounded-2xl overflow-hidden hover:border-brand-gold/50 transition-all duration-300 cursor-pointer group" data-category="birthday" onclick="openModal('Space & Astronaut Theme', 'Birthday', '₹10,500', 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80', 'Custom galaxy planet cutouts, rocket balloon pillars, metallic blue & silver balloon wall backdrop.')">
-                        <div class="relative h-60 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80" alt="Space Birthday Theme" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-brand-cardBg via-transparent opacity-80"></div>
-                            <span class="absolute top-3 right-3 bg-brand-gold text-brand-dark font-extrabold text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider">Birthday</span>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-serif text-lg font-bold text-slate-100 group-hover:text-brand-gold transition-colors">3D Space & Astronaut Theme</h3>
-                            <p class="text-xs text-slate-400 mt-1">Deep Blue, Silver Chrome & Rocket Pillars</p>
-                            <div class="flex items-center justify-between mt-4 border-t border-slate-800 pt-3">
-                                <span class="text-brand-gold font-bold text-sm">Starts @ ₹10,500</span>
-                                <span class="text-xs text-slate-400 group-hover:text-slate-200">Tap to view <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 6 -->
-                    <div class="gallery-item bg-brand-cardBg border border-brand-cardBorder rounded-2xl overflow-hidden hover:border-brand-gold/50 transition-all duration-300 cursor-pointer group" data-category="babyshower" onclick="openModal('Royal Cradle Floral Ceremony', 'Cradle Ceremony', '₹12,000', 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80', 'Floral cradle decoration, traditional golden frame backdrop, welcome archway, and fragrant jasmine garlands.')">
-                        <div class="relative h-60 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Cradle Ceremony" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-brand-cardBg via-transparent opacity-80"></div>
-                            <span class="absolute top-3 right-3 bg-brand-rose text-brand-dark font-extrabold text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider">Cradle</span>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-serif text-lg font-bold text-slate-100 group-hover:text-brand-gold transition-colors">Royal Cradle Floral & Balloon Setup</h3>
-                            <p class="text-xs text-slate-400 mt-1">Traditional Golden Frame & Flower Accents</p>
-                            <div class="flex items-center justify-between mt-4 border-t border-slate-800 pt-3">
-                                <span class="text-brand-gold font-bold text-sm">Starts @ ₹12,000</span>
+                                <span class="text-brand-gold font-bold text-sm">Starts @ ₹6,000</span>
                                 <span class="text-xs text-slate-400 group-hover:text-slate-200">Tap to view <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></span>
                             </div>
                         </div>
@@ -545,27 +505,30 @@
             </div>
         </section>
 
-        <!-- EXTRA FEATURE 2: Direct WhatsApp Booking Builder -->
+        <!-- Direct WhatsApp Booking Form Section -->
         <section id="booking" class="py-20 relative">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="glass-panel border border-brand-gold/40 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
-                    <div class="absolute -top-24 -right-24 w-64 h-64 bg-brand-gold/10 rounded-full blur-2xl pointer-events-none"></div>
+                    
+                    <div class="flex justify-center mb-4">
+                        <img src="1000003214.png" alt="SSM EVENTZ Badge" class="w-20 h-20 object-contain rounded-full logo-glow border border-brand-gold/50" onerror="this.onerror=null; this.src='https://placehold.co/100x100/1A1D26/D4AF37?text=SSM';">
+                    </div>
 
                     <div class="text-center mb-8">
                         <span class="text-brand-gold text-xs font-bold tracking-widest uppercase"><i class="fa-brands fa-whatsapp text-sm mr-1"></i> Fast WhatsApp Booking</span>
-                        <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2 mb-3">Instant Booking & Inquiry Builder</h2>
-                        <p class="text-slate-300 text-sm max-w-xl mx-auto">Fill out your event details below to automatically format an inquiry message and send it directly to our WhatsApp support team!</p>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-1 mb-2">Book Your Event With SSM EVENTZ</h2>
+                        <p class="text-slate-300 text-sm max-w-xl mx-auto">Fill out the details below to format your inquiry and send it directly to our official WhatsApp number <strong>+91 95660 47449</strong>!</p>
                     </div>
 
                     <form id="whatsappForm" onsubmit="handleWhatsAppBooking(event)" class="space-y-5">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div>
                                 <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Your Name *</label>
-                                <input type="text" id="clientName" required placeholder="e.g. Ananya Sharma" class="w-full bg-brand-dark/80 border border-brand-cardBorder focus:border-brand-gold rounded-xl px-4 py-3 text-sm text-slate-100 outline-none transition-colors">
+                                <input type="text" id="clientName" required placeholder="e.g. Ramesh Kumar" class="w-full bg-brand-dark/80 border border-brand-cardBorder focus:border-brand-gold rounded-xl px-4 py-3 text-sm text-slate-100 outline-none transition-colors">
                             </div>
                             <div>
                                 <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Mobile / WhatsApp Number *</label>
-                                <input type="tel" id="clientPhone" required placeholder="e.g. 9876543210" class="w-full bg-brand-dark/80 border border-brand-cardBorder focus:border-brand-gold rounded-xl px-4 py-3 text-sm text-slate-100 outline-none transition-colors">
+                                <input type="tel" id="clientPhone" required placeholder="e.g. 9566047449" class="w-full bg-brand-dark/80 border border-brand-cardBorder focus:border-brand-gold rounded-xl px-4 py-3 text-sm text-slate-100 outline-none transition-colors">
                             </div>
                         </div>
 
@@ -575,80 +538,77 @@
                                 <input type="date" id="eventDate" required class="w-full bg-brand-dark/80 border border-brand-cardBorder focus:border-brand-gold rounded-xl px-4 py-3 text-sm text-slate-100 outline-none transition-colors">
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Venue Location / City *</label>
-                                <input type="text" id="venueLocation" required placeholder="e.g. Jubilee Hills, Hyderabad" class="w-full bg-brand-dark/80 border border-brand-cardBorder focus:border-brand-gold rounded-xl px-4 py-3 text-sm text-slate-100 outline-none transition-colors">
+                                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Venue Location / Area *</label>
+                                <input type="text" id="venueLocation" required placeholder="e.g. Anna Nagar, Chennai" class="w-full bg-brand-dark/80 border border-brand-cardBorder focus:border-brand-gold rounded-xl px-4 py-3 text-sm text-slate-100 outline-none transition-colors">
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Calculated Estimated Budget (Auto-Filled)</label>
+                            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Calculated Estimated Package (Auto-Filled)</label>
                             <input type="text" id="formBudget" readonly value="₹6,000 (Birthday Base)" class="w-full bg-brand-dark/40 border border-brand-gold/30 rounded-xl px-4 py-3 text-sm font-bold text-brand-gold cursor-not-allowed">
                         </div>
 
                         <div>
-                            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Special Requests / Theme Notes</label>
-                            <textarea id="specialNotes" rows="3" placeholder="Tell us if you need custom color balloons, photo backdrops, or specific timing requirements..." class="w-full bg-brand-dark/80 border border-brand-cardBorder focus:border-brand-gold rounded-xl px-4 py-3 text-sm text-slate-100 outline-none transition-colors"></textarea>
+                            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Special Stalls & Custom Requirements</label>
+                            <textarea id="specialNotes" rows="3" placeholder="Tell us if you need custom balloon colors, popcorn/cotton candy stalls, DJ setup, or photography..." class="w-full bg-brand-dark/80 border border-brand-cardBorder focus:border-brand-gold rounded-xl px-4 py-3 text-sm text-slate-100 outline-none transition-colors"></textarea>
                         </div>
 
                         <button type="submit" class="w-full gold-gradient-bg text-brand-dark font-extrabold py-4 rounded-xl shadow-lg shadow-brand-gold/20 hover:scale-[1.01] active:scale-95 transition-all text-base flex items-center justify-center gap-2">
-                            <i class="fa-brands fa-whatsapp text-xl"></i> Send Inquiry via WhatsApp
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Send Inquiry via WhatsApp (+91 95660 47449)
                         </button>
                     </form>
                 </div>
             </div>
         </section>
 
-        <!-- Customer Reviews & Testimonials -->
+        <!-- Customer Testimonials -->
         <section id="reviews" class="py-20 bg-brand-dark/60 border-t border-brand-cardBorder">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase">Loved By Clients</span>
+                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase">Client Feedback</span>
                     <h2 class="font-serif text-3xl sm:text-5xl font-bold mt-2 mb-4">What Our Clients Say</h2>
-                    <p class="text-slate-400 text-base">Read feedback from happy parents, couples, and hosts who trusted SSM Party Planner.</p>
+                    <p class="text-slate-400 text-base">Feedback from families and hosts who celebrated with SSM EVENTZ.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <!-- Review 1 -->
                     <div class="bg-brand-cardBg border border-brand-cardBorder rounded-2xl p-6 relative">
                         <div class="flex text-brand-gold text-xs gap-1 mb-4">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-6">"SSM Party Planner organized my son's 1st birthday Jungle Theme. The balloon arch and animal cutouts were top-notch quality. Highly recommended for hassle-free setups!"</p>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">"SSM EVENTZ arranged the decoration along with popcorn and cotton candy stalls for my daughter's birthday. Kids absolutely loved it!"</p>
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full gold-gradient-bg flex items-center justify-center text-brand-dark font-bold text-sm">PR</div>
+                            <div class="w-10 h-10 rounded-full gold-gradient-bg flex items-center justify-center text-brand-dark font-bold text-sm">AK</div>
                             <div>
-                                <p class="font-bold text-sm text-slate-100">Priya Reddy</p>
-                                <p class="text-xs text-slate-400">1st Birthday Celebration</p>
+                                <p class="font-bold text-sm text-slate-100">Anand K.</p>
+                                <p class="text-xs text-slate-400">Birthday Event</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Review 2 -->
                     <div class="bg-brand-cardBg border border-brand-cardBorder rounded-2xl p-6 relative">
                         <div class="flex text-brand-gold text-xs gap-1 mb-4">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-6">"Booked the Baby Shower theme pastel cloud decoration. The team arrived right on time and finished everything within 2 hours. Very polite and creative!"</p>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">"Punctual team, excellent DJ sound setup, and beautiful balloon arch. Very transparent pricing on WhatsApp."</p>
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full rose-gradient-bg flex items-center justify-center text-brand-dark font-bold text-sm">SK</div>
+                            <div class="w-10 h-10 rounded-full rose-gradient-bg flex items-center justify-center text-brand-dark font-bold text-sm">SM</div>
                             <div>
-                                <p class="font-bold text-sm text-slate-100">Sowmya K.</p>
-                                <p class="text-xs text-slate-400">Baby Shower Event</p>
+                                <p class="font-bold text-sm text-slate-100">Shalini M.</p>
+                                <p class="text-xs text-slate-400">Cradle Ceremony</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Review 3 -->
                     <div class="bg-brand-cardBg border border-brand-cardBorder rounded-2xl p-6 relative">
                         <div class="flex text-brand-gold text-xs gap-1 mb-4">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-6">"The cost calculator feature on their website helped us stay within our budget! Their photography add-on and red theme for our 10th anniversary was grand!"</p>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">"The candid photography reels and fresh juice counter made our anniversary party grand. Highly recommended!"</p>
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full gold-gradient-bg flex items-center justify-center text-brand-dark font-bold text-sm">VR</div>
+                            <div class="w-10 h-10 rounded-full gold-gradient-bg flex items-center justify-center text-brand-dark font-bold text-sm">RS</div>
                             <div>
-                                <p class="font-bold text-sm text-slate-100">Vikram Rao</p>
-                                <p class="text-xs text-slate-400">Anniversary Decor</p>
+                                <p class="font-bold text-sm text-slate-100">Rajesh S.</p>
+                                <p class="text-xs text-slate-400">Anniversary Gala</p>
                             </div>
                         </div>
                     </div>
@@ -664,42 +624,45 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="w-8 h-8 rounded-full gold-gradient-bg flex items-center justify-center text-brand-dark font-extrabold text-sm">S</div>
-                        <span class="font-serif text-xl font-bold gold-gradient-text">SSM Party Planner</span>
+                        <img src="1000003214.png" alt="SSM EVENTZ" class="w-12 h-12 object-contain rounded-full logo-glow" onerror="this.onerror=null; this.src='https://placehold.co/100x100/1A1D26/D4AF37?text=SSM';">
+                        <div>
+                            <span class="font-serif text-lg font-bold gold-gradient-text block leading-none">SSM EVENTZ</span>
+                            <span class="font-script text-xs text-brand-gold">luxury eventz</span>
+                        </div>
                     </div>
-                    <p class="text-slate-400 text-xs leading-relaxed">Your premier partner for birthday decorations, balloon art, baby showers, cradle ceremonies & luxury theme setups.</p>
+                    <p class="text-slate-400 text-xs leading-relaxed">Event Management • Birthday Decoration • Popcorn & Cotton Candy • DJ • Fresh Juice • Photography</p>
                 </div>
 
                 <div>
-                    <p class="text-slate-200 font-bold text-sm mb-3">Quick Links</p>
+                    <p class="text-slate-200 font-bold text-sm mb-3">Quick Navigation</p>
                     <ul class="space-y-2 text-xs text-slate-400">
                         <li><a href="#home" class="hover:text-brand-gold transition-colors">Home</a></li>
-                        <li><a href="#services" class="hover:text-brand-gold transition-colors">Services</a></li>
+                        <li><a href="#services" class="hover:text-brand-gold transition-colors">Services & Stalls</a></li>
                         <li><a href="#estimator" class="hover:text-brand-gold transition-colors">Cost Estimator</a></li>
                         <li><a href="#gallery" class="hover:text-brand-gold transition-colors">Theme Catalog</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <p class="text-slate-200 font-bold text-sm mb-3">Event Categories</p>
+                    <p class="text-slate-200 font-bold text-sm mb-3">Specialty Services</p>
                     <ul class="space-y-2 text-xs text-slate-400">
-                        <li>1st Birthday Celebrations</li>
-                        <li>Baby Shower & Cradle Decor</li>
-                        <li>Anniversary Romantic Setups</li>
-                        <li>Corporate & Store Openings</li>
+                        <li>Birthday Balloon Decor</li>
+                        <li>Live DJ & Sound System</li>
+                        <li>Popcorn & Cotton Candy Stalls</li>
+                        <li>Fresh Juice / Welcome Counter</li>
                     </ul>
                 </div>
 
                 <div>
                     <p class="text-slate-200 font-bold text-sm mb-3">Direct Contact</p>
-                    <p class="text-xs text-slate-400 mb-2"><i class="fa-solid fa-phone text-brand-gold mr-2"></i> +91 98765 43210</p>
-                    <p class="text-xs text-slate-400 mb-2"><i class="fa-brands fa-whatsapp text-brand-gold mr-2"></i> Instant Inquiry Available</p>
-                    <p class="text-xs text-slate-400"><i class="fa-solid fa-location-dot text-brand-gold mr-2"></i> Serving Citywide & Nearby Areas</p>
+                    <p class="text-xs text-slate-400 mb-2"><i class="fa-solid fa-phone text-brand-gold mr-2"></i> +91 95660 47449</p>
+                    <p class="text-xs text-slate-400 mb-2"><i class="fa-brands fa-whatsapp text-brand-gold mr-2"></i> WhatsApp: 9566047449</p>
+                    <p class="text-xs text-slate-400"><i class="fa-solid fa-location-dot text-brand-gold mr-2"></i> Premium Event Services</p>
                 </div>
             </div>
 
             <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
-                <p>&copy; 2026 SSM Party Planner. All rights reserved.</p>
+                <p>&copy; 2026 SSM EVENTZ. All rights reserved.</p>
                 <div class="flex gap-4 mt-3 sm:mt-0">
                     <a href="#" class="hover:text-brand-gold"><i class="fa-brands fa-instagram text-base"></i></a>
                     <a href="#" class="hover:text-brand-gold"><i class="fa-brands fa-facebook text-base"></i></a>
@@ -727,7 +690,7 @@
                 
                 <div class="flex gap-3">
                     <button onclick="bookThisTheme()" class="w-full gold-gradient-bg text-brand-dark font-extrabold py-3 rounded-xl hover:shadow-lg transition-all text-sm flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp"></i> Book This Design
+                        <i class="fa-brands fa-whatsapp"></i> Book This Setup via WhatsApp
                     </button>
                 </div>
             </div>
@@ -785,13 +748,11 @@
         }
 
         function calculateEstimator() {
-            // Calculate Guest Surcharge (guests beyond 50 add ₹30 per extra guest)
             let guestSurcharge = 0;
             if (guestCount > 50) {
                 guestSurcharge = (guestCount - 50) * 30;
             }
 
-            // Calculate Addons
             let addonTotal = 0;
             addonCheckboxes.forEach(box => {
                 if (box.checked) {
@@ -801,7 +762,6 @@
 
             let finalTotal = currentBasePrice + guestSurcharge + addonTotal;
 
-            // Update UI Summary Elements
             summaryBaseTheme.textContent = currentBaseTheme;
             summaryBaseCost.textContent = formatINR(currentBasePrice);
             summaryGuestCost.textContent = formatINR(guestSurcharge);
@@ -811,7 +771,6 @@
             formBudget.value = `${formatINR(finalTotal)} (${currentBaseTheme}, ${guestCount} Guests)`;
         }
 
-        // Event Listeners for Estimator Controls
         eventTypeBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 eventTypeBtns.forEach(b => {
@@ -892,12 +851,11 @@
 
         function bookThisTheme() {
             closeModal();
-            document.getElementById('specialNotes').value = `Interested in booking design concept: "${selectedModalTheme}"`;
+            document.getElementById('specialNotes').value = `Interested in booking setup: "${selectedModalTheme}"`;
             document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
             showToast(`Theme "${selectedModalTheme}" attached!`);
         }
 
-        // Close Modal when clicking backdrop
         themeModal.addEventListener('click', (e) => {
             if (e.target === themeModal) closeModal();
         });
@@ -914,15 +872,13 @@
             const notes = document.getElementById('specialNotes').value.trim();
 
             if (!name || !phone || !date || !venue) {
-                showToast("Please complete all required form fields!");
+                showToast("Please complete all required fields!");
                 return;
             }
 
-            // WhatsApp phone number
-            const targetWhatsApp = "919876543210"; 
+            const targetWhatsApp = "919566047449"; 
 
-            // Format message
-            let msg = `*NEW EVENT INQUIRY - SSM PARTY PLANNER*\n\n`;
+            let msg = `*NEW EVENT INQUIRY - SSM EVENTZ*\n\n`;
             msg += `*Name:* ${name}\n`;
             msg += `*Contact:* ${phone}\n`;
             msg += `*Event Date:* ${date}\n`;
@@ -931,7 +887,7 @@
             if (notes) {
                 msg += `*Special Notes:* ${notes}\n`;
             }
-            msg += `\nPlease share theme catalog photos and confirm availability!`;
+            msg += `\nPlease confirm availability and share theme photos!`;
 
             const encodedMsg = encodeURIComponent(msg);
             const waUrl = `https://wa.me/${targetWhatsApp}?text=${encodedMsg}`;
@@ -939,7 +895,6 @@
             window.open(waUrl, '_blank');
         }
 
-        // --- 6. Helper Toast Display ---
         function showToast(msg) {
             const toastBox = document.getElementById('toastBox');
             document.getElementById('toastMsg').textContent = msg;
@@ -949,7 +904,6 @@
             }, 3000);
         }
 
-        // Initialize estimator values on load
         calculateEstimator();
     </script>
 </body>
