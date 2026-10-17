@@ -1,2 +1,1 @@
-# ssm-eventZ-planner-
-Decoration and All events planner &amp; management....
+
